@@ -1,0 +1,19 @@
+{% load staticfiles %}
+{# templates/capture_list.html #}
+{% load render_table from django_tables2 %}
+<html>
+	<head>
+		<title>OpenOMNI RF Captures</title>
+		<meta charset="utf-8" />
+		<link rel="icon" href="https://www.amsterdam.nl/favicon.ico" type="image/x-icon">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	</head>
+	<body>
+		<div>
+            <h1>OpenOmni RF Captures<h1></div>
+            {% render_table table %}
+		</div>
+	</body>
+</html>
